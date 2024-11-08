@@ -1,12 +1,14 @@
 import React from 'react'
-
-const Productlist = () => {
+import Link from "next/link"
+const Productlist = (productList) => {
   return (
     <div>
-        <li>product1</li>
-        <li>product2 </li>
-        <li>product 3</li>
-        <li>product 4</li>
+      <div> product list</div>
+        <li><Link href="products/1">product1</Link></li>
+        <li><Link href="products/2">product2</Link></li>
+        <li><Link href="products/3">product3</Link></li>
+        <li><Link href="products/4">product4</Link></li>
+        
     </div>
   )
 }
